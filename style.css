@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'HighTowerText';
+    src: url('fonts/HighTowerText-Reg.eot');
+    src: url('fonts/HighTowerText-Reg.eot?#iefix') format('embedded-opentype'),
+        url('fonts/HighTowerText-Reg.woff2') format('woff2'),
+        url('fonts/HighTowerText-Reg.woff') format('woff'),
+        url('fonts/HighTowerText-Reg.ttf') format('truetype'),
+        url('fonts/HighTowerText-Reg.svg#HighTowerText-Reg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+body {
+  background: url(img/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color:#e5f0e5;
+  opacity: 0.702;
+}
+.header__inner {
+  /* display: flex;
+  justify-content: space-between; */
+}
+
+.header__logo-link {
+  max-width: 50%;
+  display: inline-block;
+}
+.header__logo {
+  width: 100%;
+  height: auto;
+}
+.header__menu {
+  text-align: right;
+  margin: auto 0;
+  display: inline-block;
+}
+.header_nav-link, .header__login-link {
+  font-size: 14px;
+  font-family: 'HighTowerText';
+  color: rgb( 48, 48, 48 );
+  line-height: 1.8;
+}
+.header__nav-item {
+  list-style: none;
+  display: inline-block;
+  padding: 0 10px;
+}
+.header__nav-list {
+  padding: 0;
+  margin: 0;
+}
+.header__nav {
+  /* margin-top: 20px; */
+}
+.header__login-link {
+  padding: 0 5px;
+}
+.header__login-link:first-child {
+  border-right: 1px solid rgb( 48, 48, 48 );
+}
+
+
+.slider {
+  text-align: center;
+  margin-top: -88px;
+}
+
+.slider__item {
+  width: 1200px;
+  height: 450px;
+  margin: 0 auto;
+}
