@@ -74,4 +74,74 @@ a {
   margin: 0 auto;
   max-width: 1200px;
 }
+.body_mod {
+  padding: 36px;
+  padding-bottom: 32px;
+  margin-top: 46px;
+  background-color: rgba( 255, 255, 255, 0.8 );
+  box-shadow: 5.5px 9.526px 27px 9px rgba( 0, 1, 1, 0.45 );
+  display: flex;
+  justify-content: space-between;
+}
+/*.body__link {*/
+/*  display: inline-block;*/
+/*}*/
+.body__link img {
+  width: 240px;
+  height: auto;
+  border: 1px solid #000;
+}
+.body__link h3 {
+  font-size: 36px;
+  font-family: 'HighTowerText';
+  color: rgb( 75, 75, 75 );
+  margin: 0;
+  text-align: center;
+  margin-top: 3px;
+}
+.body__form  label, input{
+  display: block;
+}
 
+.mod2  h3{
+  margin-top: 8px;
+}
+
+/*.mod1 {*/
+/*  float: left;*/
+/*}*/
+/*.mod3 {*/
+/*  float: right;*/
+/*}*/
+.mod2 {
+  margin-top: 1px;
+}
+
+.body__form {
+  padding: 0 15px 22px 15px;
+  background-color: rgb( 233, 232, 232 );
+  margin: 0 auto;
+  width: 210px;
+}
+.body__form p, label{
+  margin: 0;
+  font-size: 18px;
+  font-family: "High Tower Text";
+  color: rgb( 75, 75, 75 );
+}
+.body__form p{
+  padding-top: 2px;
+  text-align: center;
+}
+.body__form label{
+  padding: 3px 0;
+}
+
+.body__form input {
+  padding: 0;
+  background-color: rgb( 255, 255, 255 );
+  border: none;
+  width: 210px;
+  height: 31px;
+  box-shadow: inset 2px 2px 5px  rgba(0, 0, 0, 0.23);
+}
