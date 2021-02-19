@@ -80,12 +80,11 @@ a {
   margin-top: 46px;
   background-color: rgba( 255, 255, 255, 0.8 );
   box-shadow: 5.5px 9.526px 27px 9px rgba( 0, 1, 1, 0.45 );
-  display: flex;
-  justify-content: space-between;
+  text-align: center;
 }
-/*.body__link {*/
-/*  display: inline-block;*/
-/*}*/
+.body__link {
+  display: inline-block;
+}
 .body__link img {
   width: 240px;
   height: auto;
@@ -107,14 +106,15 @@ a {
   margin-top: 8px;
 }
 
-/*.mod1 {*/
-/*  float: left;*/
-/*}*/
-/*.mod3 {*/
-/*  float: right;*/
-/*}*/
+.mod1 {
+  float: left;
+}
+.mod3 {
+  float: right;
+}
 .mod2 {
   margin-top: 1px;
+  text-align: start;
 }
 
 .body__form {
