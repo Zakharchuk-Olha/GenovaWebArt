@@ -1,0 +1,294 @@
+@font-face {
+    font-family: 'HighTowerText';
+    src: url('../fonts/HighTowerText-Reg.eot');
+    src: url('../fonts/HighTowerText-Reg.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HighTowerText-Reg.woff2') format('woff2'),
+        url('../fonts/HighTowerText-Reg.woff') format('woff'),
+        url('../fonts/HighTowerText-Reg.ttf') format('truetype'),
+        url('../fonts/HighTowerText-Reg.svg#HighTowerText-Reg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url('../fonts/MyriadPro-Regular.eot');
+  src: url('../fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/MyriadPro-Regular.woff2') format('woff2'),
+  url('../fonts/MyriadPro-Regular.woff') format('woff'),
+  url('../fonts/MyriadPro-Regular.ttf') format('truetype'),
+  url('../fonts/MyriadPro-Regular.svg#MyriadPro-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Neutra Text-Book';
+  src: url('../fonts/NeutraText-Book.eot');
+  src: url('../fonts/NeutraText-Book.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/NeutraText-Book.woff2') format('woff2'),
+  url('../fonts/NeutraText-Book.woff') format('woff'),
+  url('../fonts/NeutraText-Book.ttf') format('truetype'),
+  url('../fonts/NeutraText-Book.svg#NeutraText-Book') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Neutraface Text Demi';
+  src: url('../fonts/NeutrafaceText-Demi.eot');
+  src: url('../fonts/NeutrafaceText-Demi.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/NeutrafaceText-Demi.woff2') format('woff2'),
+  url('../fonts/NeutrafaceText-Demi.woff') format('woff'),
+  url('../fonts/NeutrafaceText-Demi.ttf') format('truetype'),
+  url('../fonts/NeutrafaceText-Demi.svg#NeutrafaceText-Demi') format('svg');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+body {
+  background-image: url(../img/bg-img.png), url(../img/bg-img.png), url(../img/bg.jpg);
+  background-position: left -466px top 120px, right -466px top 1420px, left top;
+  background-repeat: no-repeat, no-repeat, repeat;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+    top: 0;
+    left: 0;
+  padding-top: 1px;
+  padding-bottom: 4px;
+}
+
+.header__logo {
+  float: left;
+}
+.header__menu {
+  float: right;
+}
+.header_nav-link, .header__login-link {
+  font-size: 14px;
+  font-family: 'HighTowerText';
+  color: rgb( 48, 48, 48 );
+}
+.header_nav-link:hover, .header__login-link:hover {
+  font-weight: 600;
+}
+.header_nav-link {
+  padding: 0 11px;
+}
+.header_nav-link:last-child {
+  padding-right: 0;
+}
+.header__nav-list li, .header__login li {
+  list-style: none;
+  display: inline-block;
+}
+.header__nav-list {
+  padding: 0;
+  margin: 0;
+}
+.header__nav {
+  float: right;
+  clear: right;
+  margin-top:  15px;
+}
+.header__login {
+  float: right;
+  margin: 15px 0 0;
+}
+.li-margin{
+  margin: 0 -1px;
+}
+.slider {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.body_mod {
+  padding: 36px;
+  padding-bottom: 32px;
+  margin-top: 46px;
+  background-color: rgba( 255, 255, 255, 0.8 );
+  box-shadow: 5.5px 9.526px 27px 9px rgba( 0, 1, 1, 0.45 );
+  text-align: center;
+  display: table;
+}
+/*.body__link {*/
+/*  display: inline-block;*/
+/*}*/
+.body__link img {
+  border: 1px solid #000;
+}
+.body__link h3 {
+  font-size: 36px;
+  font-family: 'HighTowerText';
+  color: rgb( 75, 75, 75 );
+  margin: 0;
+  text-align: center;
+  margin-top: 3px;
+  font-weight: 400;
+}
+.body__form  label, input{
+  display: block;
+}
+
+.mod2  h3{
+  margin-top: 8px;
+}
+
+.mod1 {
+  float: left;
+  opacity: 1;
+}
+.mod3 {
+  float: right;
+  opacity: 1;
+}
+
+
+.mod1:hover, .mod3:hover {
+  opacity: 0.7;
+}
+
+.mod2 {
+  float: left;
+  margin: 1px 107px 0;
+  text-align: start;
+}
+
+.body__form {
+  padding: 0 15px 22px 15px;
+  background-color: rgb( 233, 232, 232 );
+  margin: 0 auto;
+  width: 210px;
+}
+.body__form p, label{
+  margin: 0;
+  font-size: 18px;
+  font-family: "High Tower Text";
+  color: rgb( 75, 75, 75 );
+}
+.body__form p{
+  padding-top: 2px;
+  text-align: center;
+}
+.body__form label{
+  padding: 3px 0;
+}
+
+.body__form input {
+  padding: 0 5px;
+  background-color: rgb( 255, 255, 255 );
+  border: none;
+  width: 200px;
+  height: 31px;
+  box-shadow: inset 2px 2px 5px  rgba(0, 0, 0, 0.23);
+}
+
+
+.products {
+  margin-top: 50px;
+}
+
+
+.prod__title {
+  background-color: rgb( 45, 45, 45 );
+  font-size: 24px;
+  font-family: "High Tower Text";
+  color: rgb( 255, 255, 255 );
+  padding: 14px 0 16px;
+  margin: 0;
+  text-align: center;
+}
+.prod__inner p{
+  font-size: 14px;
+  font-family: "Neutra Text-Book";
+  color: rgb( 254, 251, 251 );
+  background-color: rgb( 45, 45, 45 );
+  line-height: 1.714;
+}
+.prod__inner {
+  background-color: rgb( 45, 45, 45 );
+  padding: 7px 25px 17px 25px;
+  margin-top: -4px;
+}
+.d1 p, .d1 pre, .d2 p {
+  font-size: 18px;
+  font-family: "HighTowerText";
+  color: rgb( 255, 255, 255 );
+  display: block;
+  background-color: rgb( 45, 45, 45 );
+  margin: 0;
+}
+.d1 {
+  margin-top: 8px;
+}
+.d2 p {
+  font-family: "Neutraface Text Demi";
+}
+.prod {
+  padding: 20px;
+  background-color: rgba( 255, 255, 255, 0.8 );
+  box-shadow: 5.5px 9.526px 27px 9px rgba( 0, 1, 1, 0.45);
+  width: 430px;
+}
+.prod__info {
+  display: table;
+}
+.d1, .d2, .prod__info img {
+  float: left;
+}
+.d2 {
+  margin: 7px 23px 0 43px
+}
+
+.d2 p:first-child {
+  display: inline;
+}
+.d2 input {
+  background-color: rgb( 255, 255, 255 );
+  box-shadow: inset 2px 2px 5px  rgba(0, 0, 0, 0.23);
+  width: 40px;
+  height: 30px;
+  display: inline;
+  border: none;
+  padding: 0 5px;
+  margin-left: 12px;
+}
+.products {
+  display: table;
+}
+.prod1 {
+  float: left;
+}
+.prod2 {float: right}
+
+.buy {
+  color: rgb( 255, 255, 255 );
+  background-color: rgb( 45, 45, 45 );
+  border: none;
+  font-family: "Neutraface Text Demi";
+  font-size: 18px;
+  padding: 0;
+  cursor: pointer;
+  display: block;
+  margin-top: 25px;
+}
+.buy:hover {
+  color: bisque;
+}
