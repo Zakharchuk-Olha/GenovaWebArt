@@ -271,7 +271,9 @@ a {
   margin-left: 12px;
 }
 .products {
-  display: table;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
 }
 .prod1 {
   float: left;
