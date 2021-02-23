@@ -11,18 +11,6 @@
     font-display: swap;
 }
 @font-face {
-  font-family: 'Myriad Pro';
-  src: url('../fonts/MyriadPro-Regular.eot');
-  src: url('../fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/MyriadPro-Regular.woff2') format('woff2'),
-  url('../fonts/MyriadPro-Regular.woff') format('woff'),
-  url('../fonts/MyriadPro-Regular.ttf') format('truetype'),
-  url('../fonts/MyriadPro-Regular.svg#MyriadPro-Regular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
   font-family: 'Neutra Text-Book';
   src: url('../fonts/NeutraText-Book.eot');
   src: url('../fonts/NeutraText-Book.eot?#iefix') format('embedded-opentype'),
@@ -48,7 +36,6 @@
 }
 
 
-
 body {
   background-image: url(../img/bg-img.png), url(../img/bg-img.png), url(../img/bg.jpg);
   background-position: left -466px top 120px, right -466px top 1420px, left top;
@@ -63,7 +50,19 @@ a {
 .container {
   width: 960px;
   margin: 0 auto;
+  display: table;
 }
+.background {
+  background-color: rgba( 255, 255, 255, 0.8 );
+  box-shadow: 5px 9px 27px 9px rgba( 0, 1, 1, 0.45 );
+}
+.form {
+  box-shadow: inset 2px 2px 5px  rgba(0, 0, 0, 0.23);
+  background-color: rgb( 255, 255, 255 );
+  border: none;
+}
+
+/*HEADER*/
 
 .header {
   position: absolute;
@@ -71,23 +70,20 @@ a {
   background-color: rgba(255, 255, 255, 0.7);
     top: 0;
     left: 0;
-  padding-top: 1px;
-  padding-bottom: 4px;
 }
-
 .header__logo {
   float: left;
+  padding: 1px 0 4px;
 }
 .header__menu {
   float: right;
 }
 .header_nav-link, .header__login-link {
-  font-size: 14px;
-  font-family: 'HighTowerText';
+  font: 14px 'HighTowerText';
   color: rgb( 48, 48, 48 );
 }
 .header_nav-link:hover, .header__login-link:hover {
-  font-weight: 600;
+  text-decoration: underline;
 }
 .header_nav-link {
   padding: 0 11px;
@@ -115,60 +111,53 @@ a {
 .li-margin{
   margin: 0 -1px;
 }
+
+
+
+/*SLIDER*/
+
 .slider {
   margin: 0 auto;
   max-width: 1200px;
 }
+
+
+
+/*BODY_MOD*/
+
 .body_mod {
-  padding: 36px;
-  padding-bottom: 32px;
+  padding: 36px 36px 32px;
   margin-top: 46px;
-  background-color: rgba( 255, 255, 255, 0.8 );
-  box-shadow: 5.5px 9.526px 27px 9px rgba( 0, 1, 1, 0.45 );
-  text-align: center;
+  width: 888px;
   display: table;
 }
-/*.body__link {*/
-/*  display: inline-block;*/
-/*}*/
+
 .body__link img {
   border: 1px solid #000;
+  display: table;
 }
 .body__link h3 {
-  font-size: 36px;
-  font-family: 'HighTowerText';
+  font: 400 36px 'HighTowerText';
   color: rgb( 75, 75, 75 );
-  margin: 0;
+  margin: 7px 0 0;
   text-align: center;
-  margin-top: 3px;
-  font-weight: 400;
-}
-.body__form  label, input{
-  display: block;
 }
 
 .mod2  h3{
   margin-top: 8px;
 }
-
 .mod1 {
   float: left;
-  opacity: 1;
+}
+.mod2 {
+  float: left;
+  margin: 1px 71px 0;
 }
 .mod3 {
   float: right;
-  opacity: 1;
 }
-
-
 .mod1:hover, .mod3:hover {
   opacity: 0.7;
-}
-
-.mod2 {
-  float: left;
-  margin: 1px 107px 0;
-  text-align: start;
 }
 
 .body__form {
@@ -177,10 +166,12 @@ a {
   margin: 0 auto;
   width: 210px;
 }
+.body__form  label, .body__form input{
+  display: block;
+}
 .body__form p, label{
   margin: 0;
-  font-size: 18px;
-  font-family: "High Tower Text";
+  font: 18px "High Tower Text";
   color: rgb( 75, 75, 75 );
 }
 .body__form p{
@@ -190,102 +181,85 @@ a {
 .body__form label{
   padding: 3px 0;
 }
-
 .body__form input {
-  padding: 0 5px;
-  background-color: rgb( 255, 255, 255 );
-  border: none;
+  padding: 0 7px;
   width: 200px;
   height: 31px;
-  box-shadow: inset 2px 2px 5px  rgba(0, 0, 0, 0.23);
 }
 
 
-.products {
+
+/*PRODUCTS*/
+
+.prod {
+  padding: 20px;
   margin-top: 50px;
+  width: 430px;
+  float: left;
 }
-
+.prod:nth-child(even) {
+  float: right;
+}
 
 .prod__title {
+  font: 400 24px/30px "High Tower Text";
   background-color: rgb( 45, 45, 45 );
-  font-size: 24px;
-  font-family: "High Tower Text";
   color: rgb( 255, 255, 255 );
-  padding: 14px 0 16px;
+  padding: 14px 0 15px;
   margin: 0;
   text-align: center;
 }
-.prod__inner p{
-  font-size: 14px;
-  font-family: "Neutra Text-Book";
-  color: rgb( 254, 251, 251 );
-  background-color: rgb( 45, 45, 45 );
-  line-height: 1.714;
+.prod img {
+  display: table;
 }
 .prod__inner {
   background-color: rgb( 45, 45, 45 );
-  padding: 7px 25px 17px 25px;
-  margin-top: -4px;
+  padding: 0 25px 14px 25px;
+  display: table;
 }
-.d1 p, .d1 pre, .d2 p {
-  font-size: 18px;
-  font-family: "HighTowerText";
+.prod__inner p{
+  font: 14px/24px "Neutra Text-Book";
+  color: rgb( 254, 251, 251 );
+  background-color: rgb( 45, 45, 45 );
+  margin: 3px 0 7px;
+}
+
+.prod__info {
+  display: table;
+}
+.d1 p, .d2 p, .d2 div {
+  font: 18px/30px "HighTowerText";
   color: rgb( 255, 255, 255 );
-  display: block;
   background-color: rgb( 45, 45, 45 );
   margin: 0;
 }
 .d1 {
   margin-top: 8px;
 }
+.d2 {
+   margin: 7px 20px 0 40px;
+ }
 .d2 p {
   font-family: "Neutraface Text Demi";
-}
-.prod {
-  padding: 20px;
-  background-color: rgba( 255, 255, 255, 0.8 );
-  box-shadow: 5.5px 9.526px 27px 9px rgba( 0, 1, 1, 0.45);
-  width: 430px;
-}
-.prod__info {
-  display: table;
 }
 .d1, .d2, .prod__info img {
   float: left;
 }
-.d2 {
-  margin: 7px 23px 0 43px
-}
-
-.d2 p:first-child {
+.d2 div {
   display: inline;
 }
 .d2 input {
-  background-color: rgb( 255, 255, 255 );
-  box-shadow: inset 2px 2px 5px  rgba(0, 0, 0, 0.23);
   width: 40px;
   height: 30px;
   display: inline;
-  border: none;
   padding: 0 5px;
   margin-left: 12px;
 }
-.products {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
-}
-.prod1 {
-  float: left;
-}
-.prod2 {float: right}
-
 .buy {
+  font: 18px "Neutraface Text Demi";
   color: rgb( 255, 255, 255 );
   background-color: rgb( 45, 45, 45 );
   border: none;
-  font-family: "Neutraface Text Demi";
-  font-size: 18px;
   padding: 0;
   cursor: pointer;
   display: block;
@@ -293,4 +267,124 @@ a {
 }
 .buy:hover {
   color: bisque;
+}
+
+
+/*COLLECTION*/
+.collection {
+  display: table;
+  padding: 0 29px 36px;
+  width: 902px;
+  margin-top: 50px;
+}
+.collection h2 {
+  font: 400 60px "HighTowerText";
+  color: rgb( 75, 75, 75 );
+  text-align: center;
+  margin: 2px 0 18px;
+}
+.collection div {
+  width: 270px;
+  height: 270px;
+  border: 2px solid ;
+  border-image: radial-gradient(circle, rgba(239,219,205,0.52) 0%, rgba(108,46,22,1) 30%, rgba(251,216,197,1) 83%, rgba(151,70,26,1) 100%) .52;
+  float: left;
+  background-position: center, left top;
+  background-repeat: no-repeat, repeat;
+}
+.collection div:last-child {
+  float: right;
+  margin-right: 5px;
+}
+.coll1 {
+  background-image: url(../img/coll1-logo.png), url(../img/coll1.jpg);
+  margin-left: 5px;
+}
+.coll2 {
+  background-image: url(../img/coll2-logo.png), url(../img/coll2.jpg);
+  margin: 0 35px;
+}
+.coll3 {
+  background-image: url(../img/coll3-logo.png), url(../img/coll3.jpg);
+}
+
+
+/*FOOTER*/
+
+footer {
+  background-color: rgb( 45, 45, 45 );
+  margin-top: 50px;
+}
+.footer__inner  {
+  padding: 0 3px 63px 2px;
+}
+.footer__inner ul {
+  float: left;
+  padding: 0;
+  margin-top: 30px;
+}
+.footer__inner ul:first-child {
+  margin-right: 153px;
+}
+.footer__inner ul:last-child {
+  float: right;
+}
+.footer__inner li, .footer__inner a {
+  font: 14px/18px "Neutra Text-Book";
+  list-style: none;
+  color: rgb( 255, 255, 255 );
+}
+.footer__inner li:first-child {
+  font-size: 18px;
+}
+.footer__inner hr {
+  margin: 6px 0;
+}
+.footer__inner li:hover {
+  text-decoration: underline;
+}
+.footer__inner li:first-child:hover {
+  text-decoration: none;
+}
+
+.contact {
+  padding-left: 66px;
+  position: relative;
+}
+.letter {
+  margin-top: 5px;
+  padding-top: 3px;
+}
+.tel {
+  padding-top: 11px;
+  margin-top: 22px;
+}
+.contact:before{
+  position: absolute;
+  content: "";
+  top: 0;
+}
+.letter:before {
+  background: url("../img/letter.png") no-repeat;
+  width: 45px;
+  height: 34px;
+  left: 2px;
+}
+.tel:before {
+  background: url("../img/phone.png") no-repeat;
+  width: 15px;
+  height: 43px;
+  left: 16px;
+}
+
+.social {
+  display: inline-block;
+  padding: 0 8px;
+  margin-top: 12px;
+}
+.social1 {
+  padding-left: 0;
+}
+.social:last-child {
+  padding-right: 0;
 }

@@ -45,7 +45,7 @@
     <img class="slider__item" src="assets/img/slide1.jpg" alt="DeLille Cellars">
     <!-- <img class="slider__item" src="img/slide2.jpg" alt="DeLille Cellars"> -->
   </section>
-  <section class="container body_mod">
+  <section class="container body_mod background">
     <div class="body__link mod1">
       <a href="#">
         <img src="assets/img/visit_us.jpg" alt="Visit us"/>
@@ -58,9 +58,9 @@
       <form action="" class="body__form">
         <p>Sign Up!</p>
         <label for="name">Name</label>
-        <input id="name" type="text">
+        <input id="name" type="text" class="form">
         <label for="email">Email Address</label>
-        <input id="email" type="email">
+        <input id="email" type="email" class="form">
       </form>
       <h3>
         MAILING LIST
@@ -76,13 +76,13 @@
     </div>
   </section>
   <section class="container products">
-    <div class="prod prod1">
-      <p class="prod__title">
+    <div class="prod background">
+      <h3 class="prod__title">
         Order Your D2 2010 Release Today!
-      </p>
+      </h3>
       <img src="assets/img/prod1.2.jpg" alt="D2 2010">
       <div  class="prod__inner">
-        <p >
+        <p>
           This 2012 Gold Medal winner of the Sunset International Wine
           Compeition is a must have for your collection! Showing wonderful
           complex aromas of red and black berries, anise, nutmeg, cedar,
@@ -90,13 +90,13 @@
         </p>
         <div class="prod__info">
           <div class="d1">
-            <p>Price</p>
-            <p>Bottle / Case</p>
-            <pre>$40    /  $480</pre>
+            <p>Price<br>
+              Bottle / Case<br>
+              $40&emsp;/&emsp;$480</p>
           </div>
           <div class="d2" >
-            <p>QTY</p>
-            <input type="text">
+            <div>QTY</div>
+            <input type="number" class="form">
             <button class="buy">
               BUY NOW
             </button>
@@ -105,10 +105,10 @@
         </div>
       </div>
     </div>
-    <div class="prod  prod2">
-      <p class="prod__title">
+    <div class="prod background">
+      <h3 class="prod__title">
         Meet The 2012 Chaleur Estate Blanc!
-      </p>
+      </h3>
       <img src="assets/img/prod2.2.jpg" alt="Chaleur Estate Blanc">
       <div  class="prod__inner">
         <p >
@@ -119,13 +119,13 @@
         </p>
         <div class="prod__info">
           <div class="d1">
-            <p>Price</p>
-            <p>Bottle / Case</p>
-            <pre>$40    /  $480</pre>
+            <p>Price<br>
+              Bottle / Case<br>
+              $40&emsp;/&emsp;$480</p>
           </div>
           <div class="d2" >
-            <p>QTY</p>
-            <input type="text">
+            <div>QTY</div>
+            <input type="number" class="form">
             <button class="buy">
               BUY NOW
             </button>
@@ -134,7 +134,42 @@
         </div>
       </div>
     </div>
-
   </section>
+  <section class="container collection background ">
+    <h2>
+      DISCOVER THE COLLECTION
+    </h2>
+    <div class="coll1">
+    </div>
+    <div class="coll2">
+    </div>
+    <div class="coll3">
+    </div>
+  </section>
+  <footer>
+    <div class="container footer__inner">
+      <ul>
+        <li>About Us</li>
+        <hr noshade color="white" width="206" size="1">
+        <li><a href="#">History</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">More</a></li>
+      </ul>
+      <ul>
+        <li>Get in Touch</li>
+        <hr noshade color="white" width="206" size="1">
+        <li class="contact letter"><a href="mailto:info@delillecellars.com">info@delillecellars.com</a></li>
+        <li class="contact tel"><a href="tel:+14258779472">425-877-9472</a></li>
+      </ul>
+      <ul>
+        <li>Keep up with us Online</li>
+        <hr noshade color="white" width="206" size="1">
+        <li class="social social1"><a href="#"><img src="assets/img/fb.png" alt="facebook"/></a></li>
+        <li class="social"><a href="#"><img src="assets/img/tw.png" alt="twitter"/></a></li>
+        <li class="social"><a href="#"><img src="assets/img/pin.png" alt="pinterest"/> </a></li>
+      </ul>
+    </div>
+  </footer>
 </body>
 </html>
