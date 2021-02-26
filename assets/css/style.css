@@ -82,10 +82,26 @@ a {
 .header_nav-link, .header__login-link {
   font: 14px 'HighTowerText';
   color: rgb( 48, 48, 48 );
+  position: relative;
 }
-.header_nav-link:hover, .header__login-link:hover {
-  text-decoration: underline;
-}
+
+.header_nav-link:after, .header__login-link:after {
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 2px;
+   bottom: 0;
+   right: 0;
+   background-color: rgb( 48, 48, 48 );
+   visibility: hidden;
+   transform: scaleX(0);
+   transition: all .5s cubic-bezier(1,.25,0,.75) 0s;;
+ }
+.header_nav-link:hover:after, .header__login-link:hover:after {
+   visibility: visible;
+   transform: scaleX(1);
+ }
+
 .header_nav-link {
   padding: 0 11px;
 }
@@ -112,12 +128,6 @@ a {
 .li-margin{
   margin: 0 -1px;
 }
-
-
-
-/*SLIDER*/
-
-
 
 
 
@@ -156,6 +166,7 @@ a {
 }
 .mod1:hover, .mod3:hover {
   opacity: 0.7;
+  transition: 1s;
 }
 
 .body__form {
@@ -219,7 +230,7 @@ a {
   font: 14px/24px "Neutra Text-Book";
   color: rgb( 254, 251, 251 );
   background-color: rgb( 45, 45, 45 );
-  margin: 3px 0 7px;
+  margin: 11px 0 7px;
 }
 
 .prod__info {
@@ -245,6 +256,7 @@ a {
 }
 .d2 div {
   display: inline;
+  font-family: 'Neutraface Text Demi';
 }
 .d2 input {
   width: 40px;
@@ -265,47 +277,29 @@ a {
 }
 .buy:hover {
   color: bisque;
+  transition: .5s;
 }
 
 
 /*COLLECTION*/
 .collection {
   display: table;
-  padding: 0 29px 36px;
+  padding: 0 29px 32px;
   width: 902px;
   margin-top: 50px;
 }
-.collection h3 {
-  font: 400 60px "HighTowerText";
+.collection h2 {
+  font: 400 60px/60px "HighTowerText";
   color: rgb( 75, 75, 75 );
   text-align: center;
-  margin: 2px 0 18px;
+  margin: 16px 0 18px;
 }
-.collection div {
-  width: 270px;
-  height: 270px;
-  border: 2px solid ;
-  border-image: radial-gradient(circle, rgba(239,219,205,0.52) 0%, rgba(108,46,22,1) 30%, rgba(251,216,197,1) 83%, rgba(151,70,26,1) 100%) .52;
-  float: left;
-  background-position: center, left top;
-  background-repeat: no-repeat, repeat;
+.collection img {
+  text-align: center;
 }
-.collection div:last-child {
-  float: right;
-  margin-right: 5px;
+.collection_img {
+  margin: 0 37px;
 }
-.coll1 {
-  background-image: url(../img/coll1-logo.png), url(../img/coll1.jpg);
-  margin-left: 5px;
-}
-.coll2 {
-  background-image: url(../img/coll2-logo.png), url(../img/coll2.jpg);
-  margin: 0 35px;
-}
-.coll3 {
-  background-image: url(../img/coll3-logo.png), url(../img/coll3.jpg);
-}
-
 
 /*FOOTER*/
 
@@ -316,64 +310,96 @@ footer {
 .footer__inner  {
   padding: 0 3px 63px 2px;
 }
-.footer__inner ul {
+
+.footer__inner div {
   float: left;
   padding: 0;
   margin-top: 30px;
 }
-.footer__inner ul:first-child {
+.footer__inner div:first-child {
   margin-right: 153px;
 }
-.footer__inner ul:last-child {
+.footer__inner div:last-child {
   float: right;
 }
-.footer__inner li, .footer__inner a {
+.footer__inner h3, .footer__inner a {
   font: 14px/18px "Neutra Text-Book";
-  list-style: none;
   color: rgb( 255, 255, 255 );
 }
-.footer__inner li:first-child {
+.footer__inner h3 {
   font-size: 18px;
+  margin: 0;
 }
 .footer__inner hr {
   margin: 6px 0;
 }
-.footer__inner li:hover {
-  text-decoration: underline;
+ ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
-.footer__inner li:first-child:hover {
-  text-decoration: none;
+.li-hover {
+  position: relative;
 }
+.li-hover:after{
+  content: "";
+  position: absolute;
+  width: 30%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all .5s cubic-bezier(1,.25,0,.75) 0s;;
+}
+.li-hover:hover:after {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
 
 .contact {
   padding-left: 66px;
   position: relative;
+  margin-top: 1px;
 }
-.letter {
-  margin-top: 5px;
-  padding-top: 3px;
+.contact a {
+  line-height: 43px;
 }
-.tel {
-  padding-top: 11px;
-  margin-top: 22px;
-}
+
 .contact:before{
   position: absolute;
   content: "";
-  top: 0;
+  width: 45px;
+  height: 43px;
+  left: 0;
 }
 .letter:before {
   background: url("../img/letter.png") no-repeat;
-  width: 45px;
-  height: 34px;
-  left: 2px;
 }
 .tel:before {
   background: url("../img/phone.png") no-repeat;
-  width: 15px;
-  height: 43px;
-  left: 16px;
 }
+
+
+.contact:after{
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 1px;
+  bottom: 0;
+  right: 0;
+  background-color: #fff;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all .5s cubic-bezier(1,.25,0,.75) 0s;;
+}
+.contact:hover:after {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
 
 .social {
   display: inline-block;
