@@ -357,16 +357,16 @@ header ul li {
   margin-left: -130px;
 }
 .tabs label:nth-child(2) {
-  z-index: 3;
+  z-index: 6;
 }
 .tabs label:nth-child(4) {
-  z-index: 4;
-}
-.tabs label:nth-child(6) {
   z-index: 5;
 }
+.tabs label:nth-child(6) {
+  z-index: 4;
+}
 .tabs label:nth-child(8) {
-  z-index: 6;
+  z-index: 3;
 }
 #tab-margin {
   margin-left: 0;
