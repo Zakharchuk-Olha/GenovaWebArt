@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Counter</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="input_field">
+    <input type="number" min="1" id="people"  >
+    <label for="people">Количество человек</label>
+  </div>
+  <div class="input_field">
+    <input type="number" min="1" id="hours" >
+    <label for="hours">Количество часов</label>
+  </div>
+  <input type="button"  value="Посчитать" id="count" onclick="counter()" class="button">
+  <p>
+    Общая сумма за баню: <span id="all"> </span> грн
+  </p>
+  <p>
+    С каждого человека: <span id="proPerson"> </span> грн
+  </p>
+
+
+  <script src="assets/script.js" >  </script>
+</body>
+</html>
