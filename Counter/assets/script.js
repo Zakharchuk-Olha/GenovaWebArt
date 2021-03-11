@@ -3,32 +3,28 @@
 function counter() {
     var people = document.getElementById("people").value;
     var hours = document.getElementById("hours").value;
-    var total;
-    var morePeople;
+    var priceHours;
 
-    if (people <= 4 && hours <= 3) {
+
+    function sumHours() {
         if (hours == 1) {
-            total =  120;
+            return priceHours =  120;
         } else if(hours == 2) {
-            total =  250;
+            return priceHours =  250;
+        } else if(hours == 3)  {
+            return priceHours = 300;
         } else {
-            total = 300;
-        };
-        document.getElementById("all").innerHTML = total;
-    } else {
-        morePeople = (people - 4) * 50;
-        if (hours == 1) {
-            total = 120 + morePeople;
-        } else if (hours == 2) {
-            total = 250 + morePeople;
-        } else if (hours == 3) {
-            total = 300 + morePeople;
-        } else {
-            total = hours * 400 + morePeople;
+            return priceHours = 300 + (hours - 3) * 100;
         }
-        document.getElementById("all").innerHTML = total;
-    };
+    }
+
+    var morePeople = (people - 4) * 50;
+    var total = sumHours() + morePeople;
+
+    document.getElementById("all").innerHTML = total;
+
 
     var proPerson = total / people;
+
     document.getElementById("proPerson").innerHTML = proPerson;
 }
